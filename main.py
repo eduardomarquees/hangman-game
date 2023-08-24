@@ -36,6 +36,7 @@ def jogar_focar(palavra):
 
         if tentativas == 0:
             print(f"Fim de jogo! A palavra era '{palavras_secreta}'.")
+            break
 
 
 
