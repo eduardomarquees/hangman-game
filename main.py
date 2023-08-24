@@ -17,6 +17,7 @@ def jogar_focar(palavra):
         if letra in palavras_secreta:
             letras_certa.append(letra)
         else:
+            tentativas -=1
             print(f"Letra incorreta! Você tem {tentativas} tentativas restantes ")
 
         palavra_exibidia = " "
@@ -37,3 +38,7 @@ def jogar_focar(palavra):
             print(f"Fim de jogo! A palavra era '{palavras_secreta}'.")
 
 
+
+print("Bem-vindo ao Jogo da Forca!")
+palavra_escolhida = escolha_palavra()
+jogar_focar(palavra_escolhida)
